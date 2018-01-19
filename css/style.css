@@ -2,3 +2,129 @@ body {
   background-color: #dadada;
   font-size: 10px;
 }
+
+div {
+  float: left;
+  margin: 1% 0;
+  width: 100%;
+  padding: 20px 25px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+justify-content: center;
+}
+
+.preview.baku {
+  background-image: url("../images/baku.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 100%;
+
+}
+
+.preview.london {
+  background-image: url("../images/london.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 100%;
+}
+
+.preview.madrid {
+  background-image: url("../images/madrid.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 100%;
+}
+
+.preview.rome {
+  background-image: url("../images/rome.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 100%;
+}
+
+@media screen and (min-width: 575px){
+
+.container {
+  margin: auto;
+}
+
+  .preview.baku {
+    margin: 5px;
+    height: 200px;
+    width: 25%;
+
+  }
+
+  .preview.london {
+    margin: 5px;
+    height: 200px;
+    width: 25%;
+  }
+
+  .preview.madrid {
+    margin: 5px;
+    height: 200px;
+    width: 25%;
+  }
+
+  .preview.rome {
+    margin: 5px;
+    height: 200px;
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 1199px){
+
+  .container {
+  justify-content: center;
+  }
+
+  .preview.baku {
+    height: 200px;
+    width: 100%;
+    max-width: 200px
+
+  }
+
+  .preview.london {
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+    max-width: 200px
+  }
+
+  .preview.madrid {
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+    max-width: 200px
+  }
+
+  .preview.rome {
+    background-image: url("../images/rome.jpg");
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+    max-width: 200px
+  }
+
+}
