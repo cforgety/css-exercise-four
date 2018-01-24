@@ -4,7 +4,6 @@ body {
 }
 
 div {
-  float: left;
   margin: 1% 0;
   width: 100%;
   padding: 20px 25px;
@@ -15,49 +14,36 @@ h1 {
 }
 
 .header {
-  display: flex;
-  justify-content: center;
+  margin: auto;
+    width: 50%;
 }
 
 .container {
 justify-content: center;
 }
 
-.preview.baku {
-  background-image: url("../images/baku.jpg");
+.preview {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 200px;
   width: 100%;
+}
 
+.preview.baku {
+  background-image: url("../images/baku.jpg");
 }
 
 .preview.london {
   background-image: url("../images/london.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 200px;
-  width: 100%;
 }
 
 .preview.madrid {
   background-image: url("../images/madrid.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 200px;
-  width: 100%;
 }
 
 .preview.rome {
   background-image: url("../images/rome.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 200px;
-  width: 100%;
 }
 
 @media screen and (min-width: 575px){
@@ -66,65 +52,26 @@ justify-content: center;
   margin: auto;
 }
 
-  .preview.baku {
-    margin: 5px;
-    height: 200px;
-    width: 25%;
-
-  }
-
-  .preview.london {
-    margin: 5px;
-    height: 200px;
-    width: 25%;
-  }
-
-  .preview.madrid {
-    margin: 5px;
-    height: 200px;
-    width: 25%;
-  }
-
-  .preview.rome {
-    margin: 5px;
-    height: 200px;
-    width: 25%;
-  }
+.preview {
+  display: inline-block;
+  margin-left: 5px;
+  height: 200px;
+  width: 45%;
+  max-width: 200px;
 }
 
 @media screen and (min-width: 1199px){
 
-  .container {
+.container {
   justify-content: center;
-  }
+}
 
-  .preview.baku {
-    height: 200px;
-    width: 100%;
-    max-width: 200px
-
-  }
-
-  .preview.london {
-    background-repeat: no-repeat;
-    height: 200px;
-    width: 100%;
-    max-width: 200px
-  }
-
-  .preview.madrid {
-    background-repeat: no-repeat;
-    height: 200px;
-    width: 100%;
-    max-width: 200px
-  }
-
-  .preview.rome {
-    background-image: url("../images/rome.jpg");
-    background-repeat: no-repeat;
-    height: 200px;
-    width: 100%;
-    max-width: 200px
-  }
+.preview {
+  display: inline-block;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 25%;
+  max-width: 200px;
+}
 
 }
